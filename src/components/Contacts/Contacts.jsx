@@ -13,7 +13,10 @@ const Contacts = ({ title, contacts, buttonDelete }) => {
 
             return (
               <li className={s.item} key={id}>
-                {name}: {number}
+                <div className={s.position}>
+                  <span>{name}:</span>
+                  <span>{number}</span>
+                </div>
                 <button
                   className={s.button}
                   type="button"

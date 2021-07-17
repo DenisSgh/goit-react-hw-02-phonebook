@@ -1,4 +1,5 @@
 .list {
+  width: 400px;
   padding: 15px;
   border: 2px solid #ffb700;
   border-radius: 10px;
@@ -7,6 +8,9 @@
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 24px;
 }
 
@@ -35,10 +39,15 @@
 }
 
 .notification {
-  padding: 15px;
+  padding: 10px 15px;
   border: 2px solid #ffb700;
   border-radius: 10px;
   color: #ffb700;
   background-color: #4b5ed7;
   font-size: 24px;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
 }
