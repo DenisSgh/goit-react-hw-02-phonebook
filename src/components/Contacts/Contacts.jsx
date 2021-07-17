@@ -4,7 +4,6 @@ import Section from 'components/Section';
 import s from './Contacts.module.css';
 
 const Contacts = ({ title, contacts, buttonDelete }) => {
-  console.log(contacts.length === 0);
   return (
     <Section title={title}>
       {contacts.length !== 0 ? (
@@ -27,7 +26,7 @@ const Contacts = ({ title, contacts, buttonDelete }) => {
           })}
         </ul>
       ) : (
-        <p className={s.notification}>You don't have a contacts yet :(</p>
+        <p className={s.notification}>No contacts found :(</p>
       )}
     </Section>
   );
